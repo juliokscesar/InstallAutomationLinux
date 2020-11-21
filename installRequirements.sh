@@ -62,11 +62,13 @@ stableProgramsToInstall=(
 aurProgramsToInstall=(
 	visual-studio-code-bin
 	microsoft-edge-dev-bin
+	sublime-text-3
 )
 
 aurProgramsToInstallGit=(
 	https://aur.archlinux.org/visual-studio-code-bin.git
 	https://aur.archlinux.org/microsoft-edge-dev-bin.git
+	https://aur.archlinux.org/sublime-text-3.git
 )
 
 snapProgramsToInstall=(
