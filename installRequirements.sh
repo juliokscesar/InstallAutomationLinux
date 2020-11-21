@@ -35,6 +35,7 @@ function installSnap() {
 
 stableProgramsToInstall=(
 	base-devel
+	cpio
 	nvidia-lts
 	vlc
 	p7zip
