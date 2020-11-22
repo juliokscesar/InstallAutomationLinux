@@ -12,7 +12,7 @@ fi
 
 # Get current kernel version
 CURRENT_LINUX_KERNEL=$(uname -r)
-echo "$(CURRENT_LINUX_KERNEL)"
+echo "$CURRENT_LINUX_KERNEL"
 
 # Only runs if the kernel version is 5.4 LTS
 if [[ $CURRENT_LINUX_KERNEL != 5.4* ]]; then
@@ -76,6 +76,7 @@ snapProgramsToInstall=(
 	spotify
 )
 
+## Installing stable programs from main arch linux repo (pacman)
 for program in "${stableProgramsToInstall[@]}"; do
 	printf "\n-------------------------------------\n"
 	printf "Beginning installation of %s\n" "$program"
@@ -83,6 +84,7 @@ for program in "${stableProgramsToInstall[@]}"; do
 	sudo pacman -S $program --noconfirm
 done
 
+## Installing AUR programs
 for ((i = 0 ; i < 2 ; i++)); do
 	printf "\n-------------------------------------\n"
 	printf "Beginnig AUR insatllation of %s\n" "${aurProgramsToInstall[i]}"
@@ -93,12 +95,13 @@ for ((i = 0 ; i < 2 ; i++)); do
 	cd ~/Downloads
 done
 
+## Installing snap programs
 installSnap
 for snapProgram in "${snapProgramsToInstall[@]}"; do
 	printf "\n-------------------------------------\n"
 	printf "Beginning Snap Installation of %s\n" "$snapProgram"
 	printf "\n-------------------------------------\n"
-	sudo snap install $program
+	sudo snap install $snapProgram
 done
 
 echo "----------------------------"
