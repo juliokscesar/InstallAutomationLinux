@@ -28,9 +28,10 @@ function installSnap() {
 	echo "INSTALLING SNAP"
 	git clone https://aur.archlinux.org/snapd.git
 	cd snapd
-	makepkg -si
+	makepkg -sic
 	sudo systemctl enable --now snapd.socket
 	sudo ln -s /var/lib/snapd/snap /snap
+	cd ~/Downloads
 }
 
 stableProgramsToInstall=(
