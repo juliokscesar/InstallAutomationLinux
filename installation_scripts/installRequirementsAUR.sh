@@ -16,7 +16,7 @@ cd ~/Downloads
 
 aurProgramsToInstall=(
 	visual-studio-code-bin
-	micorosft-edge-dev-bin
+	microsft-edge-dev-bin
 	bitwarden-bin
 )
 
