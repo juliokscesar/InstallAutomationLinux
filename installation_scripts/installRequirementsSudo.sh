@@ -16,6 +16,7 @@ cd ~/Downloads
 
 stableProgramsToInstall=(
 	base-devel
+	gnome-keyring
 	cpio
 	vlc
 	p7zip
