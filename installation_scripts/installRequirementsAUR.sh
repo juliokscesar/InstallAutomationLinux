@@ -16,7 +16,7 @@ cd ~/Downloads
 
 aurProgramsToInstall=(
 	visual-studio-code-bin
-	microsft-edge-dev-bin
+	microsoft-edge-dev-bin
 	bitwarden-bin
 )
 
@@ -38,5 +38,5 @@ for ((i = 0 ; i < 3 ; i++)); do
 done
 
 echo "----------------------------------"
-echo "AUR AND SNAP INSTALLATION FINISHED"
+echo "AUR AND INSTALLATION FINISHED"
 echo "----------------------------------"
