@@ -38,6 +38,7 @@ stableProgramsToInstall=(
 	libreoffice-still-pt-br
 	gimp
 	sfml
+	gparted
 )
 
 # Installing stable programs from main arch linux repo (pacman)
